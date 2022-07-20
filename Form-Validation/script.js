@@ -21,6 +21,7 @@ form.addEventListener('submit', (e) => {
     myMsg.push('Password cannot be password')
   }
 
+  // If there is error msg in myMsg array, clicking on a "Submit" button, prevent it from submitting a form
   if (myMsg.length > 0) {
     e.preventDefault()
     errorElement.innerText = myMsg.join(', ')
